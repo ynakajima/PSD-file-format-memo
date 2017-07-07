@@ -1,7 +1,7 @@
-import test from 'ava';
+import test from 'ava'
 
-const fn = async () => Promise.resolve('foo');
+const fn = async () => Promise.resolve('foo')
 
 test(async (t) => {
-  t.is(await fn(), 'foo');
-});
+  t.is(await fn(), 'foo')
+})
