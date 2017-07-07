@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "tsc && ava"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "typescript": "^2.4.1"
+  }
+}
