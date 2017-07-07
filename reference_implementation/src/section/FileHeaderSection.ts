@@ -6,7 +6,7 @@ import { ColorMode } from '../color/ColorMode'
  *
  * > The file header contains the basic properties of the image.
  *
- * spec: [http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840](http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840)
+ * spec: http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840
  *
  * ### Usage
  * ```javascript

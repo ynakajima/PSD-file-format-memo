@@ -23,6 +23,9 @@ export class FileHeaderSectionParser {
    * ```
    *
    * ### File Header Section structure
+   *
+   * spec: http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840
+   *
    * | Length | type | Description |
    * |-------:|------|-------------|
    * | 4 | uint8 * 4 | Signature: always equal to '8BPS'. |
