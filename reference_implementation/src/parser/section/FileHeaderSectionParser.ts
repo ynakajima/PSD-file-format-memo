@@ -1,5 +1,6 @@
 /// <reference path="../../../node_modules/@types/node/index.d.ts" />
 import { FileHeaderSection } from '../../section/FileHeaderSection'
+import { DataView } from '../../util/DataView'
 
 export class FileHeaderSectionParser {
   /**
@@ -38,31 +39,32 @@ export class FileHeaderSectionParser {
    * | 2 | uint16 | The color mode of the file. Supported values are: Bitmap = 0; Grayscale = 1; Indexed = 2; RGB = 3; CMYK = 4; Multichannel = 7; Duotone = 8; Lab = 9. |
    */
   static parse (buffer: Buffer, offset: number = 0): FileHeaderSection {
+    const dataView = new DataView(buffer)
     const header = new FileHeaderSection()
 
     // read signature
-    const signature = buffer.toString('ascii', offset, offset + 4)
+    const signature = dataView.readString(4)
     if (signature !== FileHeaderSection.SIGNATURE) {
       throw new Error('Not a PSD File.')
     }
 
     // read version
-    header.version = buffer.readUInt16BE(offset + 4)
+    header.version = dataView.readUInt16()
 
     // read number of channels
-    header.numChannels = buffer.readUInt16BE(offset + 12)
+    header.numChannels = dataView.readUInt16(12)
 
     // read height
-    header.height = buffer.readUInt32BE(offset + 14)
+    header.height = dataView.readUInt32()
 
     // read width
-    header.width = buffer.readUInt32BE(offset + 18)
+    header.width = dataView.readUInt32()
 
     // read color depth
-    header.depth = buffer.readUInt16BE(offset + 22)
+    header.depth = dataView.readUInt16()
 
-    // read color mode 
-    header.colorMode = buffer.readUInt16BE(offset + 24)
+    // read color mode
+    header.colorMode = dataView.readUInt16()
 
     return header
   }
