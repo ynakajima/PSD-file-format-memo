@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "test": "npm run lint && npm run clean && tsc && ava",
+    "test": "npm run lint && npm run clean && tsc && ava; npm run clean",
     "lint": "tslint -c tslint.json src/*.ts src/**/*.ts test/**/*.ts",
     "clean": "find src test -type f -name '*.js' -exec rm -rf {} \\;",
-    "doc": "rm -rf doc && mv test ../_test && typedoc --out doc; mv ../_test test"
+    "doc": "rm -rf doc && typedoc --exclude '**/__tests__/**/*.ts' --out doc"
   },
   "devDependencies": {
     "@types/node": "^8.0.8",
