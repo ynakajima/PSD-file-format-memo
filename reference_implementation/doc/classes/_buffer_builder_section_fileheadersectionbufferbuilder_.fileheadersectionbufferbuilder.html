@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileHeaderSectionParser | </title>
+	<title>FileHeaderSectionBufferBuilder | </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_parser_section_fileheadersectionparser_.html">&quot;parser/section/FileHeaderSectionParser&quot;</a>
+					<a href="../modules/_buffer_builder_section_fileheadersectionbufferbuilder_.html">&quot;buffer-builder/section/FileHeaderSectionBufferBuilder&quot;</a>
 				</li>
 				<li>
-					<a href="_parser_section_fileheadersectionparser_.fileheadersectionparser.html">FileHeaderSectionParser</a>
+					<a href="_buffer_builder_section_fileheadersectionbufferbuilder_.fileheadersectionbufferbuilder.html">FileHeaderSectionBufferBuilder</a>
 				</li>
 			</ul>
-			<h1>Class FileHeaderSectionParser</h1>
+			<h1>Class FileHeaderSectionBufferBuilder</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">FileHeaderSectionParser</span>
+						<span class="target">FileHeaderSectionBufferBuilder</span>
 					</li>
 				</ul>
 			</section>
@@ -82,116 +82,120 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_buffer_builder_section_fileheadersectionbufferbuilder_.fileheadersectionbufferbuilder.html#header_size" class="tsd-kind-icon">HEADER_<wbr>SIZE</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_parser_section_fileheadersectionparser_.fileheadersectionparser.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_buffer_builder_section_fileheadersectionbufferbuilder_.fileheadersectionbufferbuilder.html#buildbuffer" class="tsd-kind-icon">build<wbr>Buffer</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="header_size" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> HEADER_<wbr>SIZE</h3>
+					<div class="tsd-signature tsd-kind-icon">HEADER_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">26</span><span class="tsd-signature-symbol"> =&nbsp;26</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ynakajima/PSD-file-format-memo/blob/aa107f1/reference_implementation/src/buffer-builder/section/FileHeaderSectionBufferBuilder.ts#L68">buffer-builder/section/FileHeaderSectionBufferBuilder.ts:68</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="parse" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> parse</h3>
+					<a name="buildbuffer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> build<wbr>Buffer</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_model_section_fileheadersection_.fileheadersection.html" class="tsd-signature-type">FileHeaderSection</a></li>
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Buffer<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="_model_section_fileheadersection_.fileheadersection.html" class="tsd-signature-type">FileHeaderSection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ynakajima/PSD-file-format-memo/blob/aa107f1/reference_implementation/src/parser/section/FileHeaderSectionParser.ts#L41">parser/section/FileHeaderSectionParser.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ynakajima/PSD-file-format-memo/blob/aa107f1/reference_implementation/src/buffer-builder/section/FileHeaderSectionBufferBuilder.ts#L35">buffer-builder/section/FileHeaderSectionBufferBuilder.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<h2 id="parse-file-header-section-">Parse File Header Section.</h2>
+									<h2 id="build-buffer-of-file-header-section-">Build buffer of File Header Section.</h2>
 								</div>
+								<h3 id="sample-">Sample:</h3>
+								<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> header = <span class="hljs-keyword">new</span> FileHeaderSection()
+<span class="hljs-keyword">const</span> buf = FileHeaderSectionBufferBuilder.buildBuffer(header)
+
+<span class="hljs-comment">// Prints: &lt;Buffer ....&gt;</span>
+<span class="hljs-built_in">console</span>.log(buf)
+</code></pre>
+								<h3 id="file-header-section-structure">File Header Section structure</h3>
+								<p>spec: <a href="http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840">http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840</a></p>
+								<table>
+									<thead>
+										<tr>
+											<th style="text-align:right">Length</th>
+											<th>type</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="text-align:right">4</td>
+											<td>uint8 * 4</td>
+											<td>Signature: always equal to &#39;8BPS&#39;.</td>
+										</tr>
+										<tr>
+											<td style="text-align:right">2</td>
+											<td>uint8</td>
+											<td>Version: always equal to 1. (<strong>PSB</strong> version is 2.)</td>
+										</tr>
+										<tr>
+											<td style="text-align:right">6</td>
+											<td></td>
+											<td>Reserved: must be zero.</td>
+										</tr>
+										<tr>
+											<td style="text-align:right">2</td>
+											<td>uint16</td>
+											<td>The number of channels in the image, including any alpha channels. Supported range is 1 to 56.</td>
+										</tr>
+										<tr>
+											<td style="text-align:right">4</td>
+											<td>uint32</td>
+											<td>The height of the image in pixels. Supported range is 1 to 30,000. (<strong>PSB</strong> max of 300,000)</td>
+										</tr>
+										<tr>
+											<td style="text-align:right">4</td>
+											<td>uint32</td>
+											<td>The width of the image in pixels. Supported range is 1 to 30,000. (<strong>PSB</strong> max of 300,000)</td>
+										</tr>
+										<tr>
+											<td style="text-align:right">2</td>
+											<td>uint16</td>
+											<td>Depth: the number of bits per channel. Supported values are 1, 8, 16 and 32.</td>
+										</tr>
+										<tr>
+											<td style="text-align:right">2</td>
+											<td>uint16</td>
+											<td>The color mode of the file. Supported values are: Bitmap = 0; Grayscale = 1; Indexed = 2; RGB = 3; CMYK = 4; Multichannel = 7; Duotone = 8; Lab = 9.</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>buffer: <span class="tsd-signature-type">Buffer</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Buffer of PSD File.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> offset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Offset of header section (default: 0).</p>
-										<h3 id="usage">Usage</h3>
-										<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> psd = fs.readFileSync(<span class="hljs-string">'foo.psd'</span>)
-
-<span class="hljs-comment">// parse file header section</span>
-<span class="hljs-keyword">const</span> header = FileHeaderSectionParser.parse(psd, <span class="hljs-number">0</span>)
-
-<span class="hljs-built_in">console</span>.log(header.signature) <span class="hljs-comment">// 8BPS</span>
-<span class="hljs-built_in">console</span>.log(header.numChannels) <span class="hljs-comment">// 4</span>
-<span class="hljs-built_in">console</span>.log(header.height) <span class="hljs-comment">// 1200</span>
-<span class="hljs-built_in">console</span>.log(header.width) <span class="hljs-comment">// 800</span>
-<span class="hljs-built_in">console</span>.log(header.depth) <span class="hljs-comment">// 8</span>
-<span class="hljs-built_in">console</span>.log(header.colorMode) <span class="hljs-comment">// 3</span>
-</code></pre>
-										<h3 id="file-header-section-structure">File Header Section structure</h3>
-										<p>spec: <a href="http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840">http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840</a></p>
-										<table>
-											<thead>
-												<tr>
-													<th style="text-align:right">Length</th>
-													<th>type</th>
-													<th>Description</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td style="text-align:right">4</td>
-													<td>uint8 * 4</td>
-													<td>Signature: always equal to &#39;8BPS&#39;.</td>
-												</tr>
-												<tr>
-													<td style="text-align:right">2</td>
-													<td>uint8</td>
-													<td>Version: always equal to 1. (<strong>PSB</strong> version is 2.)</td>
-												</tr>
-												<tr>
-													<td style="text-align:right">6</td>
-													<td></td>
-													<td>Reserved: must be zero.</td>
-												</tr>
-												<tr>
-													<td style="text-align:right">2</td>
-													<td>uint16</td>
-													<td>The number of channels in the image, including any alpha channels. Supported range is 1 to 56.</td>
-												</tr>
-												<tr>
-													<td style="text-align:right">4</td>
-													<td>uint32</td>
-													<td>The height of the image in pixels. Supported range is 1 to 30,000. (<strong>PSB</strong> max of 300,000)</td>
-												</tr>
-												<tr>
-													<td style="text-align:right">4</td>
-													<td>uint32</td>
-													<td>The width of the image in pixels. Supported range is 1 to 30,000. (<strong>PSB</strong> max of 300,000)</td>
-												</tr>
-												<tr>
-													<td style="text-align:right">2</td>
-													<td>uint16</td>
-													<td>Depth: the number of bits per channel. Supported values are 1, 8, 16 and 32.</td>
-												</tr>
-												<tr>
-													<td style="text-align:right">2</td>
-													<td>uint16</td>
-													<td>The color mode of the file. Supported values are: Bitmap = 0; Grayscale = 1; Indexed = 2; RGB = 3; CMYK = 4; Multichannel = 7; Duotone = 8; Lab = 9.</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+									<h5>source: <a href="_model_section_fileheadersection_.fileheadersection.html" class="tsd-signature-type">FileHeaderSection</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_model_section_fileheadersection_.fileheadersection.html" class="tsd-signature-type">FileHeaderSection</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -203,7 +207,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_buffer_builder_section_fileheadersectionbufferbuilder_.html">"buffer-<wbr>builder/section/<wbr>File<wbr>Header<wbr>Section<wbr>Buffer<wbr>Builder"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -215,7 +219,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_model_section_fileheadersection_.html">"model/section/<wbr>File<wbr>Header<wbr>Section"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_parser_section_fileheadersectionparser_.html">"parser/section/<wbr>File<wbr>Header<wbr>Section<wbr>Parser"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -228,10 +232,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_parser_section_fileheadersectionparser_.fileheadersectionparser.html" class="tsd-kind-icon">File<wbr>Header<wbr>Section<wbr>Parser</a>
+						<a href="_buffer_builder_section_fileheadersectionbufferbuilder_.fileheadersectionbufferbuilder.html" class="tsd-kind-icon">File<wbr>Header<wbr>Section<wbr>Buffer<wbr>Builder</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_buffer_builder_section_fileheadersectionbufferbuilder_.fileheadersectionbufferbuilder.html#header_size" class="tsd-kind-icon">HEADER_<wbr>SIZE</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="_parser_section_fileheadersectionparser_.fileheadersectionparser.html#parse" class="tsd-kind-icon">parse</a>
+								<a href="_buffer_builder_section_fileheadersectionbufferbuilder_.fileheadersectionbufferbuilder.html#buildbuffer" class="tsd-kind-icon">build<wbr>Buffer</a>
 							</li>
 						</ul>
 					</li>
