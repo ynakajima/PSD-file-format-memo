@@ -25,6 +25,11 @@ export class DataView {
     return this
   }
 
+  skip (length: number): DataView {
+    this.currentOffset += length
+    return this
+  }
+
   tell (): number {
     return this.currentOffset
   }
