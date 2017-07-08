@@ -8,7 +8,7 @@ import { ColorMode } from '../color/ColorMode'
  *
  * spec: http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_19840
  *
- * ### Usage
+ * ### Sample:
  * ```javascript
  * let width = 400
  * let height = 600
