@@ -1,5 +1,5 @@
 /// <reference path="../../../node_modules/@types/node/index.d.ts" />
-import { FileHeaderSection } from '../../section/FileHeaderSection'
+import { FileHeaderSection } from '../../model/section/FileHeaderSection'
 import { DataView } from '../../util/DataView'
 
 export class FileHeaderSectionParser {

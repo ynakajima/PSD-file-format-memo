@@ -1,5 +1,5 @@
 import test from 'ava'
-import { FileHeaderSection } from '../../src/section/FileHeaderSection'
+import { FileHeaderSection } from '../../src/model/section/FileHeaderSection'
 
 test('FileHeaderSection Const', (t) => {
   t.is(FileHeaderSection.MIN_PIXELS, 1)
