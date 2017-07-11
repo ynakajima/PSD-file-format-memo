@@ -1,5 +1,5 @@
-import { ColorDepth } from '../color/ColorDepth'
-import { ColorMode } from '../color/ColorMode'
+import { ColorDepth } from '../../enum/ColorDepth'
+import { ColorMode } from '../../enum/ColorMode'
 
 /**
  * ## File Header Section
